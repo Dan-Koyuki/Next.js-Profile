@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Bot = () => {
   return (
-    <div className="fixed bottom-0 flex flex-col items-center justify-center w-screen py-2 px-4">
+    <div className="flex flex-col items-center justify-center py-2 px-4 font-Orbitron">
       <p>Contact Me at</p>
       <div className="flex flex-row my-3">
         <Link

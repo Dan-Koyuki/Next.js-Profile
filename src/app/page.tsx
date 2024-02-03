@@ -7,7 +7,9 @@ export default function Home() {
     <main className="flex flex-col">
       <Top />
       <AccessButton />
-      <Bot />
+      <div className="fixed bottom-0 left-0 right-0 bg-black">
+        <Bot />
+      </div>
     </main>
   );
 }
