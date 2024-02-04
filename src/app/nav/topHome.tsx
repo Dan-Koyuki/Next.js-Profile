@@ -15,8 +15,8 @@ const TopHome = () => {
   return (
     <div className="sticky top-0 bg-black py-2 px-4 flex flex-row items-center justify-between font-Orbitron">
       <ScrollLink className="flex flex-row items-center" href={"#intro-section"}>
-        <Image
-          className="h-12 mr-4"
+        <img
+          className="w-12 h-12 mr-4"
           src="https://res.cloudinary.com/dankoyuki/image/upload/v1706862368/Custom%20Card/l3dulnz3rs8j8gnaydnj.png"
           alt="logo"
         />

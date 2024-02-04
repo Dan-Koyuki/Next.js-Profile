@@ -10,11 +10,11 @@ const AccessButton = () => {
   const [isAudio, setAudio] = useState<boolean>(true);
   const [isBookOpen, setBookOpen] = useState<boolean>(false);
   
-  const audio = new Audio("/audio/Authorize.mp3");
+  const audio = typeof Audio !== 'undefined' ? new Audio("/audio/Authorize.mp3") : null; // Check if Audio is defined
 
   const handleClick = () => {
     setBookOpen(!isBookOpen);
-    if (isAudio) {
+    if (isAudio && audio) {
       audio.volume = volume;
       audio.play(); // corrected method invocation
       setTimeout(() => {
@@ -38,7 +38,7 @@ const AccessButton = () => {
   return (
     <div className="flex flex-row items-center justify-center">
       <button onClick={handleClick}>
-        <Image
+        <img
           className="max-w-6xl mt-4 h-auto transform transition-transform duration-500"
           src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707006582/Custom%20Card/ighnivchvuglgvpqjyxz.png"}
           alt="Access Button"

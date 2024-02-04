@@ -19,7 +19,7 @@ const Home = () => {
           <span className='text-white text-sm'>(As long as you keep wishing, your wishes will come true)</span>
         </div>
         <div className='relative z-0'>
-          <Image src='https://res.cloudinary.com/dankoyuki/image/upload/v1707010295/Custom%20Card/n7ju7o3wq2jnn5chjkzm.png' className='object-cover w-full h-full rounded-r-lg' alt={'Person Placeholder'} />
+          <img src='https://res.cloudinary.com/dankoyuki/image/upload/v1707010295/Custom%20Card/n7ju7o3wq2jnn5chjkzm.png' className='object-cover w-full h-full rounded-r-lg' alt={'Person Placeholder'} />
           <div className='absolute inset-0 bg-black opacity-50 rounded-r-lg'></div> {/* Overlay effect */}
         </div>
       </div>
