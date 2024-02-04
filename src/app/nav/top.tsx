@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -22,7 +23,7 @@ const Top = () => {
   return (
     <div className="w-screen py-2 px-4 flex flex-row items-center justify-between font-Orbitron">
       <Link className="flex flex-row items-center" href={"home"}>
-        <img
+        <Image
           className="h-12 mr-4"
           src="https://res.cloudinary.com/dankoyuki/image/upload/v1706862368/Custom%20Card/l3dulnz3rs8j8gnaydnj.png"
           alt="logo"

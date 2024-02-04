@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { IoVolumeHighOutline, IoVolumeMuteOutline } from "react-icons/io5";
@@ -37,7 +38,7 @@ const AccessButton = () => {
   return (
     <div className="flex flex-row items-center justify-center">
       <button onClick={handleClick}>
-        <img
+        <Image
           className="max-w-6xl mt-4 h-auto transform transition-transform duration-500"
           src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707006582/Custom%20Card/ighnivchvuglgvpqjyxz.png"}
           alt="Access Button"

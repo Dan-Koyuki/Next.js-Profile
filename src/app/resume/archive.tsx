@@ -10,7 +10,10 @@ const Archive = () => {
       </h1>
       {MyArchivement.map((a, index) => (
         <div key={index} className="mt-2">
-          <p className="text-xl font-semibold font-Exo">{a.name}</p>
+          <div className='flex flex-row items-center'>
+            <p className="text-xl font-semibold font-Exo">{a.name}</p>
+            {a.score && a.level ? <p className='italic ml-1 text-lg font-semibold'>- {a.level} / {a.score}</p> : null}
+          </div>
           <p className='text-lg'>{a.agency}</p>
           <div className="flex flex-row items-center">
             <FaCalendarDays /> <p>{a.dateReceived} / </p>
