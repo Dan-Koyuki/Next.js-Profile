@@ -13,8 +13,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center mt-5">
           <p>
-            Hello, I'm Dan Koyuki or You might known me as Irwanto Danang
-            Bahtiar.
+            {`Hello, I\'m Dan Koyuki or You might known me as Irwanto Danang Bahtiar.`}
           </p>
           <p>
             Originally from Majalengka, currently pursuing my studies in
