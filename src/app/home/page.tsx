@@ -15,7 +15,7 @@ const Home = () => {
           <h3 className='text-white text-2xl font-semibold mb-4'>Hello there,</h3>
           <h1 className='text-white text-4xl font-bold mb-4'>{`I\'m Dan Koyuki`}</h1>
           <span className='text-white text-lg mb-4'>Aspiring Web Developer</span>
-          <h3 className='text-white text-lg font-semibold mb-4 quote'>"願いが続ける限り、希望を叶う"</h3>
+          <h3 className='text-white text-lg font-semibold mb-4 quote'>{`\"願いが続ける限り、希望を叶う\"`}</h3>
           <span className='text-white text-sm'>(As long as you keep wishing, your wishes will come true)</span>
         </div>
         <div className='relative z-0'>
