@@ -7,10 +7,12 @@ const AccessButton = () => {
   const router = useRouter();
   const [volume, setVolume] = useState<number>(0.8);
   const [isAudio, setAudio] = useState<boolean>(true);
+  const [isBookOpen, setBookOpen] = useState<boolean>(false);
   
   const audio = new Audio("/audio/Authorize.mp3");
 
   const handleClick = () => {
+    setBookOpen(!isBookOpen);
     if (isAudio) {
       audio.volume = volume;
       audio.play(); // corrected method invocation
@@ -36,9 +38,10 @@ const AccessButton = () => {
     <div className="flex flex-row items-center justify-center">
       <button onClick={handleClick}>
         <img
-          className="max-w-2xl h-auto"
-          src="https://res.cloudinary.com/dankoyuki/image/upload/v1706972854/Custom%20Card/nqvcpsw2d6zshpjiznyk.png"
+          className="max-w-6xl mt-4 h-auto transform transition-transform duration-500"
+          src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707006582/Custom%20Card/ighnivchvuglgvpqjyxz.png"}
           alt="Access Button"
+          // style={{ transform: isBookOpen ? "rotate(180deg)" : "rotate(0deg)" }}
         />
       </button>
       <button className="absolute top-0 right-0 m-12 z-10" onClick={handleVolume}>
@@ -49,3 +52,4 @@ const AccessButton = () => {
 };
 
 export default AccessButton;
+

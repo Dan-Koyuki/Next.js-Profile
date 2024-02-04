@@ -17,7 +17,7 @@ const config: Config = {
       fontFamily:{
         Nunito: ['Nunito', 'sans-serif'],
         Orbitron: ['Orbitron', 'sans-serif'],
-        Exo: ['Exo2', 'sans-serif']
+        Exo: ['Exo 2', 'sans-serif']
       }
     },
   },
