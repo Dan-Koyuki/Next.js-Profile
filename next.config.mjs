@@ -6,7 +6,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
         port: '',
-        pathname: '/dankoyuki/image/upload/v1706862368/Custom%20Card',
+        pathname: '/dankoyuki/image/upload/**',
       },
     ],
   },
