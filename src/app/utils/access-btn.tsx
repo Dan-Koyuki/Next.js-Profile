@@ -39,7 +39,7 @@ const AccessButton = () => {
     <div className="flex flex-row items-center justify-center">
       <button onClick={handleClick}>
          <Image
-          className="hidden md:block max-w-6xl mt-4 h-auto transform transition-transform duration-500"
+          className="hidden lg:block max-w-6xl mt-4 h-auto transform transition-transform duration-500"
           src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707006582/Custom%20Card/ighnivchvuglgvpqjyxz.png"}
           alt="Access Button"
           width="4096"
@@ -47,16 +47,16 @@ const AccessButton = () => {
           priority={true}
         />
         <Image
-          className="md:hidden max-w-6xl mt-4 h-auto transform transition-transform duration-500"
-          src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707006582/Custom%20Card/ighnivchvuglgvpqjyxz.png"}
+          className="lg:hidden max-w-lg mt-4 h-auto transform transition-transform duration-500"
+          src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707102469/Custom%20Card/jgxsqiv4q4khllhhrvg1.png"}
           alt="Access Button"
-          width="4096"
-          height="1536"
+          width="3072"
+          height="2048"
           priority={true}
         /> 
       </button>
       <button className="absolute top-0 right-0 m-12 z-10" onClick={handleVolume}>
-        {isAudio ? <IoVolumeHighOutline size={60} /> : <IoVolumeMuteOutline size={60} />}
+        {isAudio ? <IoVolumeHighOutline size={50} /> : <IoVolumeMuteOutline size={50} />}
       </button>
     </div>
   );
