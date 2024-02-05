@@ -3,6 +3,7 @@ import TopHome from "../nav/topHome";
 import Bot from "../nav/bot";
 import About from "./about";
 import Image from "next/image";
+import Skills from "./skills";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Home = () => {
             alt={"Person Placeholder"}
             width={420}
             height={420}
+            priority={true}
           />
           <div className="absolute inset-0 bg-black opacity-50 rounded-r-lg"></div>{" "}
           {/* Overlay effect */}
@@ -45,11 +47,12 @@ const Home = () => {
       </div>
 
       <div id="skill-section">
-        <Bot />
+        <Skills />
       </div>
 
-      <div id="portfolio-section">
-        <Bot />
+      <div id="portfolio-section" className="flex flex-col items-center justify-center py-8">
+        <p>THIS IS PORTFOLIO SECTION.</p>
+        <p>WILL BE UPDATED LATER.</p>
       </div>
 
       <div id="contact-section">

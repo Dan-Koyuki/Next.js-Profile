@@ -47,8 +47,8 @@ const AccessButton = () => {
           priority={true}
         />
         <Image
-          className="lg:hidden max-w-lg mt-4 h-auto transform transition-transform duration-500"
-          src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707102469/Custom%20Card/jgxsqiv4q4khllhhrvg1.png"}
+          className="lg:hidden max-w-lg mt-10 h-auto transform transition-transform duration-500"
+          src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707115137/Custom%20Card/nbejgfkfupucyyzeen3m.png"}
           alt="Access Button"
           width="3072"
           height="2048"

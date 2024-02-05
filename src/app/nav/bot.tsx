@@ -1,12 +1,12 @@
 import React from "react";
-import { FaDiscord, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 
 const Bot = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-2 px-4 font-Orbitron">
+    <div className="bg-black flex flex-col items-center justify-center py-2 px-4 font-Orbitron">
       <p>Contact Me at</p>
       <div className="flex flex-row my-3">
         <Link
@@ -38,6 +38,12 @@ const Bot = () => {
           href={"mailto:dankoyuki398@gmail.com"}
         >
           <SiGmail size={25} />
+        </Link>
+        <Link
+          className="mx-2 border border-white rounded-full p-1"
+          href={"https://www.instagram.com/dkoyuki/"}
+        >
+          <FaInstagram size={25}/>
         </Link>
       </div>
       {/* List of Platform */}
