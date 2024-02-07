@@ -20,8 +20,7 @@ const About = () => {
             </p>
             <p>
               Originally from Majalengka, currently pursuing my studies in
-              Informatics at State Islamic University of Sunan Gunung Djati
-              Bandung.
+              Informatics at Sunan Gunung Djati State Islamic University Bandung.
             </p>
             <p>
               I thrive on the challenges that programming presents, constantly

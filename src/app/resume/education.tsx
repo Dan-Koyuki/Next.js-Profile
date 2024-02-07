@@ -8,7 +8,7 @@ const Education = () => {
       </h1>
       <p>Pursuing Bachelor of Informatic</p>
       <p>Informatic Engineering</p>
-      <p>State Islamic University of Sunan Gunung Djati</p>
+      <p>Sunan Gunung Djati State Islamic University</p>
       <p>2021 - Current</p>
       <p>Bandung, West Java</p>
     </div>

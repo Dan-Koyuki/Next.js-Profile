@@ -4,6 +4,7 @@ import Bot from "../nav/bot";
 import About from "./about";
 import Image from "next/image";
 import Skills from "./skills";
+import Contact from "./contact";
 
 const Home = () => {
   return (
@@ -56,6 +57,7 @@ const Home = () => {
       </div>
 
       <div id="contact-section">
+        <Contact />
         <Bot />
       </div>
     </div>

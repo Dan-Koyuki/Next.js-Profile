@@ -13,7 +13,7 @@ interface Archive {
 export const MyArchivement : Archive[] = [
   {
     name: 'TOEFA (Test of English for Academics)',
-    agency: 'State Islamic University of Sunan Gunung Djati Language Center',
+    agency: 'Sunan Gunung Djati State Islamic University Language Center',
     score: '504',
     level: 'High Intermediate',
     dateReceived: '22 June 2022',
@@ -22,7 +22,7 @@ export const MyArchivement : Archive[] = [
   },
   {
     name: 'English Speaking Program',
-    agency: 'State Islamic University of Sunan Gunung Djati Language Center',
+    agency: 'Sunan Gunung Djati State Islamic University Language Center',
     score: '99',
     level: 'Elementary',
     dateReceived: '05 Mei 2023',
@@ -31,7 +31,7 @@ export const MyArchivement : Archive[] = [
   },
   {
     name: 'Arabic Speaking Program',
-    agency: 'State Islamic University of Sunan Gunung Djati Language Center',
+    agency: 'Sunan Gunung Djati State Islamic University Language Center',
     score: '74',
     level: 'Elementary',
     dateReceived: '05 Mei 2023',
@@ -40,7 +40,7 @@ export const MyArchivement : Archive[] = [
   },
   {
     name: 'International Webinar Series 2',
-    agency: 'State Islamic University of Sunan Gunung Djati',
+    agency: 'Sunan Gunung Djati State Islamic University',
     dateReceived: '08 November 2022',
     type: 'Academics',
     recognition: 'Certificate'

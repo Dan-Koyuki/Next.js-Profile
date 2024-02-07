@@ -17,7 +17,7 @@ const Top = () => {
 
   const landingLink: LinkInfo[] = [
     { text: "Resume", href: "/resume" },
-    { text: "Cryo-Legion", href: "/#" }
+    { text: "Coming Soon", href: "/#" }
   ];
 
   return (

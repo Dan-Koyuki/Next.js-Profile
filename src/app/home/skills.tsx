@@ -11,7 +11,7 @@ interface Category {
 
 const Skills = () => {
   const [isCategory, setCategory] = useState<string>("Tools");
-  const [classCategory, setClassCategory] = useState<string>("w-1/3");
+  const [classCategory, setClassCategory] = useState<string>("w-1/4");
 
   const ImageCollection: string[] = MySkill.filter(skill => skill.category === isCategory).map(skill => skill.image);
 
@@ -19,22 +19,22 @@ const Skills = () => {
     {
       key: 'F',
       value: 'Framework',
-      classCategory: 'w-1/6'
+      classCategory: 'w-1/4'
     },
     {
       key: 'L',
       value: 'Language',
-      classCategory: 'w-1/3'
+      classCategory: 'w-1/4'
     },
     {
       key: 'PL',
       value: 'Programming Language',
-      classCategory: 'w-1/5'
+      classCategory: 'w-1/4'
     },
     {
       key: 'U',
       value: 'Tools',
-      classCategory: 'w-1/3'
+      classCategory: 'w-1/4'
     },
   ]
 
@@ -57,7 +57,7 @@ const Skills = () => {
       </div>
       {/* Dynamically show image based on selected Array */}
       <div className="m-8 flex flex-col items-center justify-center w-4/5">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap w-4/5">
           {ImageCollection.map((image, index) => (
             <div key={index} className={`p-2 ${classCategory}`}> 
               <Image src={image} alt={image} className="w-full h-auto" width={250} height={365} priority={true}/>

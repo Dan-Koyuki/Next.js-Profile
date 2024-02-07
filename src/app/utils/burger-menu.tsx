@@ -14,7 +14,7 @@ const BurgerMenu = () => {
 
   const collapseLink: LinkInfo[] = [
     { text: "Resume", href: "/resume" },
-    { text: "Cryo-Legion", href: "/#" },
+    { text: "Coming Soon", href: "/#" },
     { text: "College", href: "/college" }, // this is for like my score result, not reporting me to my college ;-;
   ];
 
