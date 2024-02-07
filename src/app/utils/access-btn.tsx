@@ -47,7 +47,7 @@ const AccessButton = () => {
           priority={true}
         />
         <Image
-          className="lg:hidden max-w-screen-md w-3xl mt-10 h-auto transform transition-transform duration-500"
+          className="lg:hidden md:w-4/5 sm:w-4/5 w-72  mt-10 h-auto transform transition-transform duration-500"
           src={'https://res.cloudinary.com/dankoyuki/image/upload/v1707297386/Custom%20Card/y3w0jiimhvxvu8mufqtq.png'}
           alt="Access Button"
           width="3072"
