@@ -20,7 +20,7 @@ const Home = () => {
           <h3 className="text-white text-2xl font-semibold mb-4">
             Hello there,
           </h3>
-          <h1 className="text-white text-4xl font-bold mb-4">{`I\'m Dan Koyuki`}</h1>
+          <h1 className="text-white text-4xl font-bold mb-4">{`I\'m Irwanto Danang Bahtiar`}</h1>
           <span className="text-white text-lg mb-4">
             Aspiring Web Developer
           </span>
@@ -54,6 +54,10 @@ const Home = () => {
       <div id="portfolio-section" className="flex flex-col items-center justify-center py-8">
         <p>THIS IS PORTFOLIO SECTION.</p>
         <p>WILL BE UPDATED LATER.</p>
+      </div>
+
+      <div id="archivement">
+        <p>Certificate Here!</p>
       </div>
 
       <div id="contact-section">
