@@ -22,31 +22,29 @@ const Carousel = ({
 
   const [currentPage, setCurrentPage] = useState(0);
 
-  const totalPages = Math.ceil(images.length / itemPerSlide);
-
-  const startIndex = currentPage * itemPerSlide;
-  const slicedImages = images.slice(startIndex, startIndex + itemPerSlide);
   const onRight = () => {
-    if (currentPage + 1 < totalPages){
-      setCurrentPage(currentPage + 1);
+    if (currentPage < (images.length - itemPerSlide)){
+      setCurrentPage((prevPage) => prevPage + 1);
     }
-    console.log("hello");
-  }
+  };
+
   const onLeft = () => {
-    if (currentPage - 1 >= 0) {
-      setCurrentPage(currentPage - 1);
+    if (currentPage > 0){
+      setCurrentPage((prevPage) => prevPage - 1);
     }
-    console.log("hello");
   };
 
   useEffect(() => {
     setCurrentPage(0);
   }, [images])
 
+  const startIndex = currentPage;
+  const endIndex = Math.min(startIndex + itemPerSlide, images.length);
+
   return (
     <div className={`${containerClass}`}>
       <div className="flex flex-wrap items-center justify-center gap-4 w-full p-3">
-        {slicedImages.map((image, index) => (
+        {images.slice(startIndex, endIndex).map((image, index) => (
           <div key={index}>
             <Image
               src={image}
