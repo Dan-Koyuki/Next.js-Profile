@@ -5,7 +5,7 @@ interface PortfolioModel extends Project {
   folderhover?: string;
 }
 
-export const Portfolio: PortfolioModel[] = [
+export const MyPortfolio: PortfolioModel[] = [
   {
     name: "Atlas Mobilizer",
     role: "Developer",
@@ -42,5 +42,7 @@ export const Portfolio: PortfolioModel[] = [
     teamMembers: ["M. Iqbal Fauzi as Tester"],
     folder:
       "https://res.cloudinary.com/dankoyuki/image/upload/v1709124995/folderIcons/ioyaagbcjeemd1cx7yf4.png",
+    folderhover:
+      "https://res.cloudinary.com/dankoyuki/image/upload/v1707297386/Custom%20Card/y3w0jiimhvxvu8mufqtq.png",
   },
 ];

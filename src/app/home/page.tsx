@@ -53,7 +53,7 @@ const Home = () => {
       </div>
 
       <div id="portfolio-section">
-        <Portfolio />2
+        <Portfolio />
       </div>
 
       <div id="archivement">

@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <div className="font-Nunito">
       <h1 className="border-b-4 border-black text-3xl pb-1 mt-5 mb-2 font-Orbitron font-bold">
-        Projects
+        Personal Projects
       </h1>
       {MyProject.map((project, index) => (
         <div key={index} className="mt-2">

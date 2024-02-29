@@ -39,13 +39,6 @@ export const MyArchivement : Archive[] = [
     recognition: 'Certificate'
   },
   {
-    name: 'International Webinar Series 2',
-    agency: 'Sunan Gunung Djati State Islamic University',
-    dateReceived: '08 November 2022',
-    type: 'Academics',
-    recognition: 'Certificate'
-  },
-  {
     name: 'Database Design Course & Final Exam Completion',
     agency: 'Oracle Academy',
     dateReceived: '16 September 2023',
