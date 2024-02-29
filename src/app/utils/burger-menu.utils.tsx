@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { LinkInfo } from '../nav/top';
+import { LinkInfo } from '../nav/top.main';
 import Link from 'next/link';
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { MySkill } from '../utils/mySkill'
-import Carousel from '../utils/Carousel';
+import Carousel from '../utils/Carousel.utils';
 
 interface Category {
   key: string,
@@ -56,8 +56,8 @@ const Skills = () => {
         imageClass="w-full h-auto"
         imageHeight={365}
         imageWidth={250}
-        containerClass="relative z-0 m-8 flex flex-col items-center justify-center w-4/5 border"
-        itemPerSlide={4}
+        containerClass="relative z-0 m-8 flex flex-col items-center justify-center w-4/5"
+        itemPerSlide={3}
       />
     </div>
   );

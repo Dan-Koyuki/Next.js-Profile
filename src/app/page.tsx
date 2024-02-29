@@ -1,6 +1,6 @@
-import Bot from "./nav/bot";
-import Top from "./nav/top";
-import AccessButton from "./utils/access-btn";
+import Bot from "./nav/bot.main";
+import Top from "./nav/top.main";
+import AccessButton from "./utils/access-btn.utils";
 
 export default function Home() {
   return (

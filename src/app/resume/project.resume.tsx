@@ -1,5 +1,5 @@
 import React from "react";
-import { MyProject } from "../utils/project";
+import { MyProject } from "../utils/project.resume";
 import { FaCalendarDays } from "react-icons/fa6";
 
 const Project = () => {

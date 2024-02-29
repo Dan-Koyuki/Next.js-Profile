@@ -1,10 +1,11 @@
 import React from "react";
-import TopHome from "../nav/topHome";
-import Bot from "../nav/bot";
-import About from "./about";
+import TopHome from "../nav/top.home";
+import Bot from "../nav/bot.main";
+import About from "./about.home";
 import Image from "next/image";
-import Skills from "./skills";
-import Contact from "./contact";
+import Skills from "./skills.home";
+import Contact from "./contact.home";
+import Portfolio from "./portfolio.home";
 
 const Home = () => {
   return (
@@ -51,9 +52,8 @@ const Home = () => {
         <Skills />
       </div>
 
-      <div id="portfolio-section" className="flex flex-col items-center justify-center py-8">
-        <p>THIS IS PORTFOLIO SECTION.</p>
-        <p>WILL BE UPDATED LATER.</p>
+      <div id="portfolio-section">
+        <Portfolio />2
       </div>
 
       <div id="archivement">

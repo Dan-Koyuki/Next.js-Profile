@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import ScrollLink from '../utils/ScrollLink';
-import BurgerMenu from '../utils/burger-menu';
-import { LinkInfo } from './top';
+import ScrollLink from '../utils/ScrollLink.utils';
+import BurgerMenu from '../utils/burger-menu.utils';
+import { LinkInfo } from './top.main';
 
 const TopHome = () => {
 

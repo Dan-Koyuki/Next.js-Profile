@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
   name: string,
   role: string,
   contribute: string[],

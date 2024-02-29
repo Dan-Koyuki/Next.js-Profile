@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import Project from "./myProj";
+import Project from "./project.resume";
 import { FaLocationDot, FaPhoneFlip } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import Career from "./career";
-import Education from "./education";
-import Skill from "./skill";
-import Archive from "./archive";
+import Career from "./career.resume";
+import Education from "./education.resume";
+import Skill from "./skills.resume";
+import Archive from "./archive.resume";
 
 const resume = () => {
   return (

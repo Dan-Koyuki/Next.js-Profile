@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -19,24 +19,23 @@ const Carousel = ({
   imageClass,
   itemPerSlide,
 }: CarouselProps) => {
-
   const [currentPage, setCurrentPage] = useState(0);
 
   const onRight = () => {
-    if (currentPage < (images.length - itemPerSlide)){
+    if (currentPage < images.length - itemPerSlide) {
       setCurrentPage((prevPage) => prevPage + 1);
     }
   };
 
   const onLeft = () => {
-    if (currentPage > 0){
+    if (currentPage > 0) {
       setCurrentPage((prevPage) => prevPage - 1);
     }
   };
 
   useEffect(() => {
     setCurrentPage(0);
-  }, [images])
+  }, [images]);
 
   const startIndex = currentPage;
   const endIndex = Math.min(startIndex + itemPerSlide, images.length);
@@ -57,12 +56,26 @@ const Carousel = ({
           </div>
         ))}
       </div>
-      <button onClick={onLeft} className="absolute border z-10 left-4">
-        Left
-      </button>
-      <button onClick={onRight} className="absolute border z-10 right-4">
-        Right
-      </button>
+      <Image
+        onClick={onLeft}
+        className="absolute border z-10 left-4 bg-white w-16 rounded-full opacity-30 hover:opacity-90"
+        src={
+          "https://res.cloudinary.com/dankoyuki/image/upload/v1709119859/Icons/gvohnfeiuwaa43zogf8s.png"
+        }
+        alt="Left Button"
+        width={512}
+        height={512}
+      />
+      <Image
+        onClick={onRight}
+        className="absolute border z-10 right-4 bg-white w-16 rounded-full opacity-30 hover:opacity-90"
+        src={
+          "https://res.cloudinary.com/dankoyuki/image/upload/v1709119863/Icons/plyxtyqxb2wipkdefwfw.png"
+        }
+        alt="Right Button"
+        width={512}
+        height={512}
+      />
     </div>
   );
 };
