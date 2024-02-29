@@ -12,20 +12,18 @@ const Portfolio = () => {
       </h1>
       <div className="w-11/12 flex flex-wrap justify-center items-center gap-3 py-2">
         {MyPortfolio.map((project, index) => (
-          <div>
-            <div
-              key={index}
-              className="w-1/4"
-            >
-              <Image
-                src={hovered ? project.folder : project.folderhover}
-                alt={project.name}
-                width={2048}
-                height={1536}
-                onMouseEnter={() => isHovered(false)}
-                onMouseLeave={() => isHovered(true)}
-              />
-            </div>
+          <div
+            key={index}
+            className="w-1/4"
+          >
+            <Image
+              src={hovered ? project.folder : project.folderhover}
+              alt={project.name}
+              width={2048}
+              height={1536}
+              onMouseEnter={() => isHovered(false)}
+              onMouseLeave={() => isHovered(true)}
+            />
           </div>
         ))}
       </div>

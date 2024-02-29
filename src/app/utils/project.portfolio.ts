@@ -43,6 +43,6 @@ export const MyPortfolio: PortfolioModel[] = [
     folder:
       "https://res.cloudinary.com/dankoyuki/image/upload/v1709124995/folderIcons/ioyaagbcjeemd1cx7yf4.png",
     folderhover:
-      "https://res.cloudinary.com/dankoyuki/image/upload/v1707297386/Custom%20Card/y3w0jiimhvxvu8mufqtq.png",
+      "https://res.cloudinary.com/dankoyuki/image/upload/v1709181652/folderIcons/hlefmxownz7dhp5gq6vo.png",
   },
 ];
