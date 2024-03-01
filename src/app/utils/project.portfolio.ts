@@ -1,8 +1,8 @@
 import { Project } from "./project.resume";
 
-interface PortfolioModel extends Project {
+export interface PortfolioModel extends Project {
   folder: string;
-  folderhover?: string;
+  folderhover: string;
 }
 
 export const MyPortfolio: PortfolioModel[] = [

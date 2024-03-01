@@ -6,7 +6,7 @@ export interface Project {
   image: string[],
   description: string,
   technologies: string[],
-  links?: {
+  links: {
     frontend?: string,
     backend?: string,
     demo?: string,
