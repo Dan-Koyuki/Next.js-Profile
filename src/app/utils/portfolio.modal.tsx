@@ -1,20 +1,20 @@
-'use client'
-import React, { useEffect, useRef } from 'react'
-import { PortfolioModel } from './project.portfolio';
-import Link from 'next/link';
+"use client";
+import React, { useEffect, useRef } from "react";
+import { PortfolioModel } from "./project.portfolio";
+import Link from "next/link";
+import Carousel from "./Carousel.utils";
 
 type PortfolioProps = {
   isClose: () => void;
   isOpen: boolean;
   project: PortfolioModel;
-}
+};
 
-const ModalPortfolio = ({isOpen, isClose, project}: PortfolioProps) => {
-
+const ModalPortfolio = ({ isOpen, isClose, project }: PortfolioProps) => {
   const modalRef = useRef<null | HTMLDialogElement>(null);
-  
+
   useEffect(() => {
-    if (isOpen){
+    if (isOpen) {
       modalRef.current?.showModal();
     } else {
       modalRef.current?.close();
@@ -24,7 +24,7 @@ const ModalPortfolio = ({isOpen, isClose, project}: PortfolioProps) => {
   const close = () => {
     isClose();
     modalRef.current?.close();
-  }
+  };
 
   return (
     <dialog
@@ -35,7 +35,7 @@ const ModalPortfolio = ({isOpen, isClose, project}: PortfolioProps) => {
         <div className="flex flex-row items-center justify-between mb-4 pt-2 px-5 bg-yellow-400">
           <div>
             <h1 className="text-2xl">{project.name}</h1>
-            <h4>{project.duration}</h4>
+            <h4>{project.duration} / {project.status}</h4>
           </div>
           <button
             onClick={close}
@@ -44,12 +44,22 @@ const ModalPortfolio = ({isOpen, isClose, project}: PortfolioProps) => {
             x
           </button>
         </div>
-        <div className="flex flex-col py-1 px-4">
+        <div className="flex items-center justify-center">
+          <Carousel
+            images={project.image}
+            itemPerSlide={1}
+            imageHeight={720}
+            imageWidth={1280}
+            containerClass="relative z-0 flex flex-col items-center justify-center w-4/5"
+            imageClass="w-3/5 h-auto"
+          />
+        </div>
+        <div className="flex flex-row text-2xl py-1 px-4 justify-center items-center text-center">
           <p>{project.description}</p>
         </div>
         <div className="flex flex-row justify-evenly mt-4 py-2 px-5 bg-yellow-400">
           {project.links ? (
-            <div className="bg-green-500 p-2 rounded-xl text-white">
+            <div className="bg-green-500 text-xl p-2 rounded-xl text-white">
               {project.links.documentation ? (
                 <Link href={project.links.documentation} target="_blank">
                   Docs
@@ -58,7 +68,7 @@ const ModalPortfolio = ({isOpen, isClose, project}: PortfolioProps) => {
             </div>
           ) : null}
           {project.links ? (
-            <div className="bg-green-500 p-2 rounded-xl text-white">
+            <div className="bg-green-500 text-xl p-2 rounded-xl text-white">
               {project.links.demo ? (
                 <Link href={project.links.demo} target="_blank">
                   Get Started!
@@ -70,6 +80,6 @@ const ModalPortfolio = ({isOpen, isClose, project}: PortfolioProps) => {
       </div>
     </dialog>
   );
-}
+};
 
-export default ModalPortfolio
+export default ModalPortfolio;

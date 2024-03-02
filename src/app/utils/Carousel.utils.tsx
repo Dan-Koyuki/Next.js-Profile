@@ -44,7 +44,7 @@ const Carousel = ({
     <div className={`${containerClass}`}>
       <div className="flex flex-wrap items-center justify-center gap-4 w-full p-3">
         {images.slice(startIndex, endIndex).map((image, index) => (
-          <div key={index}>
+          <div className="flex flex-col items-center">
             <Image
               src={image}
               alt={image}
@@ -52,6 +52,7 @@ const Carousel = ({
               width={imageWidth}
               height={imageHeight}
               priority={true}
+              key={index}
             />
           </div>
         ))}
