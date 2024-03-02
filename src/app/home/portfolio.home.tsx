@@ -36,6 +36,7 @@ const Portfolio = () => {
               onMouseEnter={() => isHovered(false)}
               onMouseLeave={() => isHovered(true)}
               onClick={() => openDetails(project)}
+              className="cursor-pointer"
             />
           </div>
         ))}
