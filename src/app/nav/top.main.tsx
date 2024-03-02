@@ -31,7 +31,7 @@ const Top = () => {
           height={2048}
           priority={true}
         />
-        <p className="hidden lg:block text-2xl font-bold">Dan Koyuki</p>
+        <p className="hidden md:block text-2xl font-bold">Dan Koyuki</p>
       </Link>
 
       <div>

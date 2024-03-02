@@ -36,8 +36,8 @@ const AccessButton = () => {
   }
 
   return (
-    <div className="flex flex-row items-center justify-center">
-      <button onClick={handleClick}>
+    <div className="flex flex-row justify-center">
+      <button onClick={handleClick} className="sm:flex sm:items-center justify-center">
          <Image
           className="hidden lg:block max-w-6xl mt-4 h-auto transform transition-transform duration-500"
           src={isBookOpen ? "https://res.cloudinary.com/dankoyuki/image/upload/v1707006754/Custom%20Card/kxhizlnfaoh5qixjqjj5.png" : "https://res.cloudinary.com/dankoyuki/image/upload/v1707006582/Custom%20Card/ighnivchvuglgvpqjyxz.png"}
@@ -47,7 +47,7 @@ const AccessButton = () => {
           priority={true}
         />
         <Image
-          className="lg:hidden md:w-4/5 sm:w-4/5 w-72  mt-10 h-auto transform transition-transform duration-500"
+          className="lg:hidden md:w-3/5 sm:w-2/5 w-72 mt-5 h-auto"
           src={'https://res.cloudinary.com/dankoyuki/image/upload/v1707297386/Custom%20Card/y3w0jiimhvxvu8mufqtq.png'}
           alt="Access Button"
           width="3072"

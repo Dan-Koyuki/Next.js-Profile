@@ -13,8 +13,8 @@ const About = () => {
           <p>Initialize! Thrive!</p>
           <p>A Code to the Program turns to take off toward a dream!</p>
         </div>
-        <div className="flex flex-row items-center justify-center text-center mt-5 text-lg">
-          <div className="w-5/12 mr-3 text-left ml-4">
+        <div className="flex md:flex-row flex-col items-center justify-center text-center md:mt-5 md:text-lg text-sm">
+          <div className="md:w-5/12 md:mr-3 md:text-left md:ml-4 px-4">
             <p>
               {`Hello, I\'m Irwanto Danang Bahtiar.`}
             </p>
@@ -32,7 +32,7 @@ const About = () => {
               this ever-evolving field.
             </p>
           </div>
-          <div className="w-5/12 ml-3 text-left mr-2">
+          <div className="md:w-5/12 ml-3 md:text-left mr-2">
             <p>{`Let\'s Connect!`}</p>
             <p>{`I\'m genuinely honored at the prospect of working together. Each chance is a priceless learning experience for me, and I\'m dedicated to ongoing growth and learning to attain optimal outcomes.`}</p>
             <p className="mt-4 ">Phone: <Link className="text-blue-400" href={"https://wa.me/6282116424576"}>+62 821-1642-4576</Link></p>
