@@ -5,7 +5,7 @@ import Image from "next/image";
 import ModalPortfolio from "../utils/portfolio.modal";
 
 const Portfolio = () => {
-  const [hovered, isHovered] = useState(true);
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
   const [details, isDetails] = useState(false);
   const [selectedProject, setProject] = useState<PortfolioModel>(
     MyPortfolio[0]
@@ -29,14 +29,16 @@ const Portfolio = () => {
         {MyPortfolio.map((project, index) => (
           <div key={index} className="md:w-1/5 w-1/3">
             <Image
-              src={hovered ? project.folder : project.folderhover}
+              src={
+                hoveredIndex === index ? project.folderhover : project.folder
+              }
               alt={project.name}
               width={2048}
               height={1536}
-              onMouseEnter={() => isHovered(false)}
-              onMouseLeave={() => isHovered(true)}
               onClick={() => openDetails(project)}
               className="cursor-pointer"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(-1)}
             />
           </div>
         ))}

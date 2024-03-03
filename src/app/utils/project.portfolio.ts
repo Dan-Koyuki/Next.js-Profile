@@ -67,8 +67,8 @@ export const MyPortfolio: PortfolioModel[] = [
     },
     status: "On Going",
     folder:
-      "https://res.cloudinary.com/dankoyuki/image/upload/v1709124995/folderIcons/ioyaagbcjeemd1cx7yf4.png",
+      "https://cdn4.iconfinder.com/data/icons/colored-folders-1/64/folder_closed-512.png",
     folderhover:
-      "https://res.cloudinary.com/dankoyuki/image/upload/v1709181652/folderIcons/hlefmxownz7dhp5gq6vo.png",
+      "https://cdn4.iconfinder.com/data/icons/colored-folders-1/64/folder_opened-128.png",
   },
 ];
