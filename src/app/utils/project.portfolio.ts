@@ -45,5 +45,30 @@ export const MyPortfolio: PortfolioModel[] = [
     folderhover:
       "https://res.cloudinary.com/dankoyuki/image/upload/v1709181652/folderIcons/hlefmxownz7dhp5gq6vo.png",
   },
-  
+  {
+    name: "Pokemon Data",
+    role: "Developer",
+    contribute: [
+      "Conducted comprehensive testing across the application to identify and resolve any issues, ensuring high quality and reliability.",
+      "Utilized advanced debugging techniques to pinpoint and address software bugs promptly, maintaining optimal performance.",
+      "Established design patterns and guidelines to maintain consistency and coherence throughout the application.",
+    ],
+    duration: "February 2024 - present",
+    image: [
+      "https://res.cloudinary.com/dankoyuki/image/upload/v1709379334/PKData/gwkhpy2w9jmwlujfwtiy.png",
+      "https://res.cloudinary.com/dankoyuki/image/upload/v1709379333/PKData/cn3t63jy74lwfzks37s4.png",
+    ],
+    description:
+      "A comprehensive library for accessing Pokémon data including species, items, moves, and more.",
+    technologies: ["TypeScript", "Node.js"],
+    links: {
+      demo: "https://www.npmjs.com/package/pkdata-dan",
+      documentation: "https://github.com/Dan-Koyuki/Lib-Node.js-PokeII",
+    },
+    status: "On Going",
+    folder:
+      "https://res.cloudinary.com/dankoyuki/image/upload/v1709124995/folderIcons/ioyaagbcjeemd1cx7yf4.png",
+    folderhover:
+      "https://res.cloudinary.com/dankoyuki/image/upload/v1709181652/folderIcons/hlefmxownz7dhp5gq6vo.png",
+  },
 ];
