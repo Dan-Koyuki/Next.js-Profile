@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ScrollLink from '../utils/ScrollLink.utils';
 import { LinkInfo } from './top.main';
 import BurgerMenu from '../utils/burger-menu.utils';
+import Link from 'next/link';
 
 const TopHome = () => {
 
@@ -10,6 +11,9 @@ const TopHome = () => {
     { text: "Skill", href: "#skill-section" },
     { text: "Portfolio", href: "#portfolio-section" },
     { text: "Contact", href: "#contact-section" },
+  ];
+
+  const links: LinkInfo[] = [
     { text: "Resume", href: "/resume" },
     { text: "Coming Soon", href: "/#" },
   ];
@@ -37,10 +41,15 @@ const TopHome = () => {
             {link.text}
           </ScrollLink>
         ))}
+        {links.map((link, index) => (
+          <Link className="mx-3 text-base" key={index} href={link.href}>
+            {link.text}
+          </Link>
+        ))}
       </div>
 
       <div className="sm: block lg:hidden">
-        <BurgerMenu links={mainLink} />
+        <BurgerMenu links={mainLink} links2={links} />
       </div>
     </div>
   );

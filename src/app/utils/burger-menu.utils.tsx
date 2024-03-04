@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import { LinkInfo } from "../nav/top.main";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import Link from "next/link";
+import ScrollLink from "./ScrollLink.utils";
 
 type BurgerMenuProps = {
   links: LinkInfo[];
+  links2: LinkInfo[];
 };
 
-const BurgerMenu = ({ links }: BurgerMenuProps) => {
+const BurgerMenu = ({ links, links2 }: BurgerMenuProps) => {
   // ?Control State to determine Menu Condition
   const [isCollapsed, setIsCollapsed] = useState(false);
 
@@ -28,7 +30,20 @@ const BurgerMenu = ({ links }: BurgerMenuProps) => {
       {isCollapsed && (
         <div className="absolute top-16 right-4 p-4 rounded border shadow bg-gray-500">
           {links.map((link, index) => (
-            <Link className="block my-2 text-base" key={index} href={link.href}>
+            <ScrollLink
+              className="block my-2 text-base"
+              key={index}
+              href={link.href}
+            >
+              {link.text}
+            </ScrollLink>
+          ))}
+          {links2.map((link, index) => (
+            <Link
+              className="block my-2 text-base"
+              key={index}
+              href={link.href}
+            >
               {link.text}
             </Link>
           ))}
